@@ -9,7 +9,7 @@ const getPlaylists = async (req, res) => {
   }
 };
 
-const createPlaylist = async (req, res) => {
+const addPlaylist = async (req, res) => {
   const { name, trackIds } = req.body
 
 
@@ -19,4 +19,4 @@ const editPlaylist = async (req, res) => {
 
 }
 
-module.exports = { getPlaylists, createPlaylist, editPlaylist };
+module.exports = { getPlaylists, addPlaylist, editPlaylist };
